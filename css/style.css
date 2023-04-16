@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,600;0,800;0,900;1,100&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+    background-color: #E5E5E5;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+  margin-left: 80px;
+}
+
+/* header img:hover{
+    animation: bounce .3s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+} */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+i{
+    color: #0A3871;
+}
+
+.encrypt {
+    flex: 1;
+    min-width: 70vw;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#encryptTxtArea {
+    width: 70%;
+    height: 600px;
+    resize: none;
+    border: none;
+    padding: 40px;
+    background-color: transparent;
+    outline: none;
+    font-size: 32px;
+    font-weight: 600;
+    color: #0A3871;
+}
+
+#encryptTxtArea::placeholder {
+    color: #0A3871;
+}
+
+.info {
+    margin: 20px 0px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+button {
+    width: 310px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    cursor: pointer;
+    color: #0A3871;
+}
+
+button:first-child {
+    background-color: #0A3871;
+    color: #fff;
+}
+
+button:active{
+    background-color: #ADB5BD;
+}
+
+
+.infoButton{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.decrypt {
+    flex: 1;
+    height: 750px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 70%;
+    min-width: 363px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+h3{
+    height: 66px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+    color: #0A3871;
+}
+
+#decryptTxtArea{
+    width: 100%;
+    height: 250px;
+    resize: none;
+    border: none;
+    padding: 40px;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0A3871;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 30px;
+}
+
+li{
+    cursor: pointer;
+}
+
+dialog{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    color: #0A3871;
+    
+}
+
+dialog img{
+    width: 200px;
+    height: 200px;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog:focus{
+    outline: none;
+}
+
+@media (max-width:1209px){
+    .container{
+        margin-top: 30px;
+        max-width: 100%;
+    }
+}

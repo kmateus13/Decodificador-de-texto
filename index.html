@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Vector.svg" type="image/svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8c663173e7.js" crossorigin="anonymous"></script>
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header>
+        <img class="fa-brands" src="./img/Vector.svg" alt="logo Alura" title="Alura">
+    </header>
+    <main>
+        <div class="encrypt">
+            <textarea id="encryptTxtArea" placeholder="Digite seu texto..."></textarea>
+            <div class="infoButton">
+                <div class="info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="criptografar()">Criptografar</button>
+                    <button onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="decrypt">
+            <section class="container">
+                <img src="./img/imgLupa.svg" alt="Ilustração Lupa">
+                <h3></h3>
+                <textarea id="decryptTxtArea" readonly></textarea>
+                <button onclick="copiar()">Copiar</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/klisman-mateus-b506a3253/" target="_blank" title="Linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/klisman013/" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/kmateus13" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <dialog>
+        <img id="imgModal">
+        <h4></h4>
+    </dialog>
+    <script src="./js/script.js" defer></script>
+</body>
+
+</html>
